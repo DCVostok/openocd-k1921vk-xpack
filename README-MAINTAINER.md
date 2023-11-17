@@ -23,7 +23,7 @@ terminal (on Windows use the _Git Bash_ console):
 
 ```sh
 rm -rf ~/Work/xpack-dev-tools/openocd-xpack.git && \
-git clone https://github.com/xpack-dev-tools/openocd-xpack.git \
+git clonehttps://github.com/DCVostok/openocd-k1921vk-xpack.git \
   ~/Work/xpack-dev-tools/openocd-xpack.git
 ```
 
@@ -34,7 +34,7 @@ rm -rf ~/Work/xpack-dev-tools/openocd-xpack.git && \
 mkdir -p ~/Work/xpack-dev-tools && \
 git clone \
   --branch xpack-develop \
-  https://github.com/xpack-dev-tools/openocd-xpack.git \
+ https://github.com/DCVostok/openocd-k1921vk-xpack.git \
   ~/Work/xpack-dev-tools/openocd-xpack.git
 ```
 
