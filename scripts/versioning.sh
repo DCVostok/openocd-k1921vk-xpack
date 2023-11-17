@@ -16,7 +16,7 @@ function application_build_versioned_components()
   # Keep them in sync with the combo archive content.
   if [[ "${XBB_RELEASE_VERSION}" =~ 0[.]12[.]0-.* ]]
   then
-    XBB_OPENOCD_GIT_URL=${XBB_APPLICATION_OPENOCD_GIT_URL:-"https://github.com/openocd-org/openocd.git"}
+    XBB_OPENOCD_GIT_URL=${XBB_APPLICATION_OPENOCD_GIT_URL:-"https://github.com/DCVostok/openocd-k1921vk.git"}
     XBB_OPENOCD_GIT_BRANCH=${XBB_APPLICATION_OPENOCD_GIT_BRANCH:-"master"}
 
     if [ "${XBB_RELEASE_VERSION}" == "0.12.0-1" ]
@@ -26,6 +26,10 @@ function application_build_versioned_components()
     then
       # Sep 2, 2023
       XBB_OPENOCD_GIT_COMMIT=${XBB_APPLICATION_OPENOCD_GIT_COMMIT:-"18281b0c497694d91c5608be54583172838be75c"}
+    elif [ "${XBB_RELEASE_VERSION}" == "0.12.0-k1921vk" ]
+    then
+      # Sep 2, 2023
+      XBB_OPENOCD_GIT_COMMIT=${XBB_APPLICATION_OPENOCD_GIT_COMMIT:-"v0.12.0"}
     else
       echo "Unsupported ${XBB_APPLICATION_LOWER_CASE_NAME} version ${XBB_RELEASE_VERSION}"
       exit 1
